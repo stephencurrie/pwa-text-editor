@@ -1,8 +1,8 @@
 {
-  "name": "pwa-text-editor",
+  "name": "JATE",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "PWA Text Editor",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
@@ -13,10 +13,10 @@
     "client": "cd client && npm start"
   },
 
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/stephencurrie/pwa-text-editor.git"
-  },
+  // "repository": {
+  //   "type": "git",
+  //   "url": "git+https://github.com/stephencurrie/pwa-text-editor.git"
+  // },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -28,8 +28,8 @@
     "concurrently": "^5.2.0",
     "nodemon": "^2.0.4"
   },
-  "bugs": {
-    "url": "https://github.com/stephencurrie/pwa-text-editor/issues"
-  },
-  "homepage": "https://github.com/stephencurrie/pwa-text-editor#readme"
+  // "bugs": {
+  //   "url": "https://github.com/stephencurrie/pwa-text-editor/issues"
+  // },
+  // "homepage": "https://github.com/stephencurrie/pwa-text-editor#readme"
 }
