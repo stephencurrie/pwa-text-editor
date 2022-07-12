@@ -13,10 +13,6 @@
     "client": "cd client && npm start"
   },
 
-  // "repository": {
-  //   "type": "git",
-  //   "url": "git+https://github.com/stephencurrie/pwa-text-editor.git"
-  // },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -27,9 +23,6 @@
   "devDependencies": {
     "concurrently": "^5.2.0",
     "nodemon": "^2.0.4"
-  },
-  // "bugs": {
-  //   "url": "https://github.com/stephencurrie/pwa-text-editor/issues"
-  // },
-  // "homepage": "https://github.com/stephencurrie/pwa-text-editor#readme"
+  }
+
 }
