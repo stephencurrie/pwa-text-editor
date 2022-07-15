@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a progressive web application (PWA) that is a text editor that runs in a browser.  It is a single page web application that features several data persistence techniques that serve as redundancy in case one of the options isn't supported by the browser, of if the application is offline.  These techniquest include using babel to translate the javascript to lower versions, using a local database to store data when the application is offline, and using a service worker to cache data locally.               
+This is a progressive web application (PWA) that is a text editor that runs in a browser.  It is a single page web application that features several data persistence techniques that serve as redundancy in case one of the options isn't supported by the browser, or if the application is offline.  These techniques include using webpack, using babel to translate the javascript to lower versions, using a local database to store data when the application is offline, and using a service worker to cache data locally.               
 
 The application was built using a starter code that was provided.  The application is deployed to Heroku.
 
@@ -17,35 +17,52 @@ The application was built using a starter code that was provided.  The applicati
 
 Below is a series of screenshots that show the application in Heroku, as well as show the state of the application through the developer tools in the browser.
 
+J.A.T.E Screenshot on Heroku
+
 ![J.A.T.E Screenshot on Heroku](./client/src/images/JATE_screen.png)
 
-![Manifest JSON file](./client/src/images/JATE_screen.png)
+Manifest JSON
 
-Here is a video of what the command prompts look like, the successful tests being run, and the html it creates. [Video](https://drive.google.com/file/d/1DklfrO6np96KN67PQs_tejeHCTtDmjVk/view)
+![Manifest JSON](./client/src/images/manifest_screen.png)
 
-The code is in the [GitHub Repository](https://github.com/stephencurrie/teamprofilegenerator)
+Service Worker
+
+![Service Worker](./client/src/images/serviceworker_screen.png)
+
+Indexed DB storage
+
+![Indexed DB storage](./client/src/images/dbstorage_screen.png)
+
+
+The code is in the [GitHub Repository](https://github.com/stephencurrie/pwa-text-editor)
 
 ## Acceptance
 
 The following were the acceptance criteria for the project:
 
-- [x] When I am prompted for my team members and their information, an HTML file is generated that displays a nicely formatted team roster based on user input
-- [x] When I click on an email address in the HTML, my default email program opens and populates the TO field of the email with the address
-- [x] When I click on the GitHub username, that GitHub profile opens in a new tab
-- [x] When I start the application, I am prompted to enter the team manager’s name, employee ID, email address, and office number
-- [x] When I enter the team manager’s name, employee ID, email address, and office number, I am presented with a menu with the option to add an engineer or an intern or to finish building my team
-- [x] When I select the engineer option, I am prompted to enter the engineer’s name, ID, email, and GitHub username, and I am taken back to the menu
-- [x] When I select the intern option, I am prompted to enter the intern’s name, ID, email, and school, and I am taken back to the menu
-- [x] When I decide to finish building my team, I exit the application, and the HTML is generated
+- [x] When I open my application in my editor, I see a client server folder structure
+- [x] When I run `npm run start` from the root directory, my application starts up the backend and serves the client
+- [x] When I run the text editor application from my terminal, my JavaScript files have been bundled using webpack
+- [x] When I run my webpack plugins, I have a generated HTML file, service worker, and a manifest file
+- [x] When I use next-gen JavaScript in my application, the text editor still functions in the browser without errors
+- [x] When I open the text editor, IndexedDB has immediately created a database storage
+- [x] When I enter content and subsequently click off of the DOM window, the content in the text editor has been saved with IndexedDB
+- [x] When I load my web application, I have a registered service worker using workbox
+- [x] When I register a service worker, I have my static assets pre cached upon loading along with subsequent pages and static assets
+- [x] When I deploy to Heroku, I have proper build scripts for a webpack application
 
 ## Learned
 
 The following is a list of things I learned:
 
-- How to use object oriented coding
-- How to use classes and sub classes to pass data between files
-- How to use Test Driven Development
-- How to use jest to test
+- How to use client/server file structure
+- How to use webpack to package code and dependencies
+- How to use Babel to make javascript accessible in older browsers
+- How to save data to a local database to make it accessible offline
+- How to cache data locally to improve performance and make it accessible offline
+- How to generate a manifest json file
+- How to use concurrently
+
 
 ## Credits
 I want to thank our instructor Trey Eckels as he provided some sample code and additional help in completing the application.
